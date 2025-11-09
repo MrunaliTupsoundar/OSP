@@ -41,7 +41,7 @@ int main() {
         }
         
         // Display result
-        printf("RCV Type %ld: **%s**\n", m.type, m.text);
+        printf("RCV Type %ld: %s\n", m.type, m.text);
     }
     
     // Check if loop ended because queue was removed

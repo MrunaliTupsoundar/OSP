@@ -21,7 +21,11 @@ int main() {
 
     // Create queue
     int qid = msgget(KEY, IPC_CREAT | 0666);
-    if (qid == -1) { perror("msgget"); return 1; }
+    if (qid == -1) { 
+        perror("msgget"); 
+        return 1; 
+    }
+    
     printf("Sender running (Queue ID: %d). Type 'quit' to exit.\n", qid);
 
     while (1) {

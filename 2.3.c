@@ -60,16 +60,11 @@ int main(int argc, char *argv[]) {
 
         long count = 0;
         int current_num = 2;
-        bool first_prime = true;
 
         // Loop until 'num_primes' (the user's input N) primes have been found
         while (count < num_primes) {
             if (isPrime(current_num)) {
-                if (!first_prime) {
-                    printf(", ");
-                }
-                printf("%d", current_num);
-                first_prime = false;
+                printf("%d ", current_num);
                 count++;
             }
             current_num++;
